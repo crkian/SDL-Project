@@ -9,7 +9,8 @@ ResourceManager::ResourceManager(Game* game)
 	this->game = game; // pass game as it has pointer to renderer and we need it
 }
 
-// next the cleanup, calls quit function of gamestate using delete. The hash table can't be looped through
+/* next the cleanup, calls quit function of gamestate using delete. The hash table can't be looped through
+*/
 
 ResourceManager::~ResourceManager()
 {
@@ -27,9 +28,10 @@ ResourceManager::~ResourceManager()
 void ResourceManager::loadTexture(std::string filename)
 {
 	SDL_Texture* texture = NULL;
-	texture=IMG_LoadTexture(game->getRenderer(), filename.c_str());
+	texture = IMG_LoadTexture(game->getRenderer(), filename.c_str());
 	if(texture == NULL)
 		throw std::runtime_error("Error while loading texture: "+ filename);
+	
 	//std paid is a single row in the table mentioned before
 
 	textures.insert(std::pair<std::string, SDL_Texture*>(filename, texture));

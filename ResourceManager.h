@@ -9,34 +9,31 @@
 #include <iterator>
 #include <string>
 
-/* Resource manager handles game states,loads a texture and stores it
-in a hash map, if somethign goes wrong an exception is created and that is shown in game
-Hash maps use two columns first is a key and the second is where the keys are stored
-Using std::string the hash map returns value assignedto key or NULL if nothing
-std::map for the hash table
-*/
-
 class Game;
 
-	//each state has a resourcemanger and each takes care of its own data, including freeing
+/* Every state should have a ResourceManager,
+and every state should take care of it's own
+data. That includes freeing the data when it's
+no longer needed.*/
+class ResourceManager
+{
+private:	
+	std::map<std::string, SDL_Texture*> textures;
 
-	class ResourceManager
-	{
-	private:
-		std::map<std::string, SDL_Texture*> textures;
+	Game* game;
+public:
+	/*We won't be supplying the class with default constructor because
+	we want to force the programmer to pass the pointer to instance of Game
+	to the ResourceManager.*/
+	ResourceManager(Game* game);
 
-		Game* game;
-	public:
-// no default constructor the pointer is passed to instance of game to the rosourcemanager
+	//Deleting the instance will wipe all the textures allocated by that instance from memory
+	~ResourceManager();
 
-		ResourceManager(Game* game);
-//deleting instance takes textures from memory
-		~ResourceManager();
+	void loadTexture(std::string filename);
 
-		void loadTexture(std::string filename);
+	//Returns NULL if can't find the texture with the designated filename
+	SDL_Texture* getTexture(std::string filename);	
+};
 
-		//if no texture return null
-
-		SDL_Texture* getTexture(std::string filename);
-	};
 #endif
