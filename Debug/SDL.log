@@ -1,9 +1,16 @@
-﻿Build started 06/03/2015 00:31:19.
-     1>Project "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         SDL.vcxproj -> c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Debug\SDL.exe
-     1>Done Building Project "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)).
+﻿Build started 06/03/2015 22:32:57.
+     1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ResourceManager.cpp State_Gameplay.cpp main.cpp
+         main.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\resourcemanager.h(7): fatal error C1083: Cannot open include file: 'SDL_image.h': No such file or directory
+         State_Gameplay.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\resourcemanager.h(7): fatal error C1083: Cannot open include file: 'SDL_image.h': No such file or directory
+         ResourceManager.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\resourcemanager.h(7): fatal error C1083: Cannot open include file: 'SDL_image.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.19
+Time Elapsed 00:00:03.73

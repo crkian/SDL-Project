@@ -1,10 +1,3 @@
-/* Resource manager handles game states,loads a texture and stores it
-in a hash map, if somethign goes wrong an exception is created and that is shown in game
-Hash maps use two columns first is a key and the second is where the keys are stored
-Using std::string the hash map returns value assignedto key or NULL if nothing
-std::map for the hash table
-*/
-
 #ifndef RESOURCE_MANAGER_H
 #define RESOURCE_MANAGER_H
 
@@ -16,7 +9,14 @@ std::map for the hash table
 #include <iterator>
 #include <string>
 
-class Game
+/* Resource manager handles game states,loads a texture and stores it
+in a hash map, if somethign goes wrong an exception is created and that is shown in game
+Hash maps use two columns first is a key and the second is where the keys are stored
+Using std::string the hash map returns value assignedto key or NULL if nothing
+std::map for the hash table
+*/
+
+class Game;
 
 	//each state has a resourcemanger and each takes care of its own data, including freeing
 
@@ -40,4 +40,3 @@ class Game
 		SDL_Texture* getTexture(std::string filename);
 	};
 #endif
-
