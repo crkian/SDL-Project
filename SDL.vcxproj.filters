@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="images">
+      <UniqueIdentifier>{24466682-1503-4522-8d12-2beaca950438}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameState.h">
@@ -25,6 +28,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dawn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,6 +53,9 @@
     <ClCompile Include="State_Gameplay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Dawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="character.png">
@@ -57,6 +69,18 @@
     </Image>
     <Image Include="tile_01.png">
       <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\character.png">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="images\font_texture.png">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="images\item.png">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="images\tile_01.png">
+      <Filter>images</Filter>
     </Image>
   </ItemGroup>
 </Project>

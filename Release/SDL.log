@@ -1,0 +1,20 @@
+﻿Build started 07/03/2015 16:16:29.
+     1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Dawn.cpp
+         Dawn.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(2): error C2008: '.' : unexpected in macro definition
+     1>Dawn.cpp(62): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(63): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(64): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(65): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(69): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(70): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(71): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Dawn.cpp(72): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.74

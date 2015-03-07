@@ -39,12 +39,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\SDL2-2.0.3\x86_64-w64-mingw32\include\SDL2;C:\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2-2.0.3\x86_64-w64-mingw32\lib;C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\libraries\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\libraries\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -54,7 +54,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -70,17 +70,20 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="dawn.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="object.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="State_Gameplay.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Dawn.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameManagement.cpp" />
     <ClCompile Include="main.cpp" />
@@ -90,6 +93,10 @@
   <ItemGroup>
     <Image Include="character.png" />
     <Image Include="font_texture.png" />
+    <Image Include="images\character.png" />
+    <Image Include="images\font_texture.png" />
+    <Image Include="images\item.png" />
+    <Image Include="images\tile_01.png" />
     <Image Include="item.png" />
     <Image Include="tile_01.png" />
   </ItemGroup>
