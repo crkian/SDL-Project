@@ -1,4 +1,4 @@
-#include "dawn.h"
+#include "Dawn.h"
 
 void Dawn::Init(Game* game, ResourceManager*rm)
 {
@@ -77,4 +77,16 @@ void Dawn::Update(float deltaTime)
 	dirY=0.0f;
 
 }
+
+void Dawn::Render()
+{
+	SDL_RenderCopy(game->getRenderer, sheet, &source_rect, &dest_rect);
+}
+
+void Dawn::Move(int dx, int dy)
+{
+	dirX += dx;
+	dirY += dy;
+}
+
 

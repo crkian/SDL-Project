@@ -30,10 +30,10 @@
     <ClInclude Include="ResourceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="object.h">
+    <ClInclude Include="dawn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dawn.h">
+    <ClInclude Include="Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

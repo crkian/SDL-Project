@@ -1,7 +1,7 @@
-#ifndef DAWN.h
-#define DAWN.h
+#ifndef DAWN.H
+#define DAWN.H
 
-#include "object.h"
+#include "Object.h"
 #include <SDL.h>
 #include <SDL_image.h>
 
@@ -31,8 +31,5 @@ public:
 	// sets dirX and dirY
 	void Move (int dx, int dy);
 };
-
-
-
 
 #endif

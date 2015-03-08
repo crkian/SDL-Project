@@ -31,6 +31,11 @@ bool State_Gameplay::Init(Game* game)
 	//this is the pointer return for the test
 
 	test_tex=rm->getTexture("images/character.png");
+	
+	//called after the textures
+
+	dawn.Init(game, rm);
+	
 	return true;
 
 }
@@ -45,6 +50,24 @@ void State_Gameplay::HandleEvents(SDL_Event* event)
 }
 void State_Gameplay::Update(float deltaTime)
 {
+	// keyboard input
+
+	const Uint8* keyboard = SDL_GetKeyboardState(NULL);
+
+// no if else so we can move in a diagonal
+
+	if(keyboard[SDL_SCANCODE_RIGHT])
+		dawn.Move(1,0);
+	if(keyboard[SDL_SCANCODE_LEFT])
+		dawn.Move(-1,0);
+	if(keyboard[SDL_SCANCODE_UP])
+		dawn.Move(0,-1);
+	if(keyboard[SDL_SCANCODE_DOWN])
+		dawn.Move(0,1);
+
+
+	//this causes no delay to the framerate
+	dawn.Update(deltaTime);
 }
 void State_Gameplay::Render()
 {
@@ -56,6 +79,7 @@ void State_Gameplay::Render()
 
 	SDL_RenderCopy(game->getRenderer(), test_tex, NULL, &dst);
 
+	dawn.Render();
 }
 void State_Gameplay::Quit()
 {
