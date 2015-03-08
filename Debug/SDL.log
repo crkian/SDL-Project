@@ -1,59 +1,21 @@
-﻿Build started 08/03/2015 22:16:49.
+﻿Build started 08/03/2015 22:22:07.
      1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Dawn.cpp Object.cpp Random.cpp State_Gameplay.cpp main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Dawn.cpp Random.cpp State_Gameplay.cpp main.cpp
          main.cpp
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(2): error C2008: '.' : unexpected in macro definition
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\main.cpp(8): error C2512: 'State_Gameplay' : no appropriate default constructor available
          State_Gameplay.cpp
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(2): error C2008: '.' : unexpected in macro definition
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(41): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2 overloads have no legal conversion for 'this' pointer
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(42): error C2663: 'std::vector<_Ty,_Alloc>::back' : 2 overloads have no legal conversion for 'this' pointer
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(42): error C2227: left of '->Init' must point to class/struct/union/generic type
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(77): error C2662: 'std::vector<_Ty,_Alloc>::size' : cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
-                 Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
-                 Conversion requires a second user-defined-conversion operator or constructor
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(79): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1119): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1135): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
-                 while trying to match the argument list '(std::vector, int)'
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(79): error C2227: left of '->Update' must point to class/struct/union/generic type
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(80): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1119): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1135): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
-                 while trying to match the argument list '(std::vector, int)'
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(80): error C2227: left of '->collidesWith' must point to class/struct/union/generic type
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(82): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1119): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1135): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
-                 while trying to match the argument list '(std::vector, int)'
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(82): error C2227: left of '->Relocate' must point to class/struct/union/generic type
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(99): error C2662: 'std::vector<_Ty,_Alloc>::size' : cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
-                 Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
-                 Conversion requires a second user-defined-conversion operator or constructor
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(101): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1119): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1135): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
-                 while trying to match the argument list '(std::vector, int)'
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(101): error C2227: left of '->Render' must point to class/struct/union/generic type
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(111): error C2662: 'std::vector<_Ty,_Alloc>::size' : cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
-                 Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
-                 Conversion requires a second user-defined-conversion operator or constructor
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(113): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1119): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(1135): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
-                 while trying to match the argument list '(std::vector, int)'
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(115): error C2662: 'std::vector<_Ty,_Alloc>::clear' : cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
-                 Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
-                 Conversion requires a second user-defined-conversion operator or constructor
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(99): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(111): warning C4018: '<' : signed/unsigned mismatch
          Random.cpp
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\random.cpp(4): error C2065: 'lower' : undeclared identifier
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\random.cpp(4): error C2062: type 'int' unexpected
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\random.cpp(5): error C2143: syntax error : missing ';' before '{'
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\random.cpp(5): error C2447: '{' : missing function header (old-style formal list?)
-         Object.cpp
          Dawn.cpp
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.h(2): error C2008: '.' : unexpected in macro definition
@@ -71,4 +33,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:13.41
+Time Elapsed 00:00:06.85

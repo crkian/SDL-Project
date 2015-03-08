@@ -15,7 +15,7 @@ private:
 
 	Dawn dawn; //has been added to the game
 
-	std::vector coins; //add coins to the game
+	std::vector<Coin*> coins; //add coins to the game
 
 public:
 	bool Init(Game* game); //Not virtual, do not derive from this class, will need to define function bodies

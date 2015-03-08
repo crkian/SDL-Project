@@ -75,6 +75,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Level.h" />
     <ClInclude Include="Coin.h" />
     <ClInclude Include="dawn.h" />
     <ClInclude Include="Game.h" />
@@ -89,6 +90,7 @@
     <ClCompile Include="Dawn.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameManagement.cpp" />
+    <ClCompile Include="Level.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Random.cpp" />
