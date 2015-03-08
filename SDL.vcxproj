@@ -75,18 +75,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Coin.h" />
     <ClInclude Include="dawn.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="Random.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="State_Gameplay.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Dawn.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameManagement.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Random.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="State_Gameplay.cpp" />
   </ItemGroup>

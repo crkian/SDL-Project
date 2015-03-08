@@ -36,6 +36,11 @@ bool State_Gameplay::Init(Game* game)
 
 	dawn.Init(game, rm);
 	
+	for(int i=0; i<20; i++)
+	{
+		coins.push_back(new Coin());
+		coins.back()->Init(game,rm);
+	}
 	return true;
 
 }
@@ -68,6 +73,16 @@ void State_Gameplay::Update(float deltaTime)
 
 	//this causes no delay to the framerate
 	dawn.Update(deltaTime);
+
+	for(int i=0; i<coins.size(); i++)
+	{
+		coins[i]->Update(deltaTime);
+		if(coins[i]->collidesWith(&dawn))
+		{
+			coins[i]->Relocate();
+		}
+	}
+
 }
 void State_Gameplay::Render()
 {
@@ -80,8 +95,23 @@ void State_Gameplay::Render()
 	SDL_RenderCopy(game->getRenderer(), test_tex, NULL, &dst);
 
 	dawn.Render();
+
+	for(int i=0; i<coins.size(); i++)
+	{
+		coins[i]->Render();
+	}
+
 }
 void State_Gameplay::Quit()
 {
 	delete rm; //deletes the resource manager
+
+//remove the coins
+
+	for(int i=0; i<coins.size(); i++)
+	{
+		delete coins[i];
+	}
+	coins.clear();
+
 }

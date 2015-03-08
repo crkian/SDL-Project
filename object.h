@@ -24,6 +24,10 @@ public:
 	virtual void Init(Game* game, ResourceManager* rm) =0;
 	virtual void Update(float deltaTime) = 0;
 	virtual void Render()=0;
+
+	//collision
+	bool collidesWith(Object* other);
+
 };
 
 #endif
