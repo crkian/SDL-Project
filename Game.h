@@ -11,7 +11,7 @@ class GameState;
 class Game
 {
 private:
-	SDL_Window*window;
+	SDL_Window* window;
 	SDL_Renderer* renderer;
 	SDL_Event event;
 
@@ -38,10 +38,8 @@ public:
 	Game(); //Default values
 
 	bool Init(GameState* state);
-
+	void Thread(); 
 	//start the main thread and loop till quit
-
-	void Thread();
 
 private:
 
@@ -56,6 +54,8 @@ private:
 public:
 	void PushState(GameState* state);
 	void PopState(); //pop check last state and not take
+	
+	
 	void setQuit(); //will quit whatever
 
 	//renderer used more than once  so use a get function

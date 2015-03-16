@@ -14,7 +14,7 @@ void Coin::Init(Game* game, ResourceManager* rm)
 	sizeX=16;
 	sizeY=16;
 
-	texture=rm->getTexture("images/item.png");
+	texture=rm->getTexture("item.png");
 
 }
 

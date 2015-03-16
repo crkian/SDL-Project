@@ -1,5 +1,5 @@
-#ifndef DAWN.H
-#define DAWN.H
+#ifndef DAWN_H
+#define DAWN_H
 
 #include "Object.h"
 #include <SDL.h>

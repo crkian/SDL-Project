@@ -24,7 +24,7 @@ sheet_animSpeed=6.0f;
 
 move_speed=32.0f;
 
-sheet=rm->getTexture("images/character.png");
+sheet=rm->getTexture("character.png");
 }
 
 //movement from state_gameplay, changes if the key press is left right up down with the character facing move
@@ -80,7 +80,7 @@ void Dawn::Update(float deltaTime)
 
 void Dawn::Render()
 {
-	SDL_RenderCopy(game->getRenderer, sheet, &source_rect, &dest_rect);
+	SDL_RenderCopy(game->getRenderer(), sheet, &source_rect, &dest_rect);
 }
 
 void Dawn::Move(int dx, int dy)
@@ -88,5 +88,3 @@ void Dawn::Move(int dx, int dy)
 	dirX += dx;
 	dirY += dy;
 }
-
-

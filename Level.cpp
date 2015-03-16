@@ -14,7 +14,7 @@ Level::Level(Game* game, ResourceManager* rm)
 
 void Level::Init()
 {
-	tile=rm->getTexture("images/tile_01.png");
+	tile=rm->getTexture("tile_01.png");
 }
 
 void Level::Render()

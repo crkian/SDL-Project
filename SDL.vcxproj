@@ -41,6 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\libraries\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\libraries\lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\libraries\include;$(IncludePath)</IncludePath>
@@ -75,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Font.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Coin.h" />
     <ClInclude Include="dawn.h" />
@@ -84,10 +86,12 @@
     <ClInclude Include="Random.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="State_Gameplay.h" />
+    <ClInclude Include="State_Menu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Dawn.cpp" />
+    <ClCompile Include="Font.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameManagement.cpp" />
     <ClCompile Include="Level.cpp" />
@@ -96,6 +100,7 @@
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="State_Gameplay.cpp" />
+    <ClCompile Include="State_Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="character.png" />

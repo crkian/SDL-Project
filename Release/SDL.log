@@ -1,10 +1,17 @@
-﻿Build started 08/03/2015 15:52:42.
+﻿Build started 16/03/2015 22:40:07.
      1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Dawn.cpp main.cpp State_Gameplay.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Coin.cpp Dawn.cpp Font.cpp Game.cpp GameManagement.cpp Level.cpp main.cpp Object.cpp Random.cpp ResourceManager.cpp State_Gameplay.cpp State_Menu.cpp
+         Coin.cpp
+     1>Coin.cpp(26): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(27): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(29): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(30): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(31): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(32): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Coin.cpp(42): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Coin.cpp(43): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
          Dawn.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(2): error C2008: '.' : unexpected in macro definition
      1>Dawn.cpp(62): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
      1>Dawn.cpp(63): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
      1>Dawn.cpp(64): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
@@ -13,15 +20,40 @@
      1>Dawn.cpp(70): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
      1>Dawn.cpp(71): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
      1>Dawn.cpp(72): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>Dawn.cpp(83): error C3867: 'Game::getRenderer': function call missing argument list; use '&Game::getRenderer' to create a pointer to member
+         Font.cpp
+     1>Font.cpp(26): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Font.cpp(27): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Font.cpp(38): warning C4018: '<' : signed/unsigned mismatch
+         Game.cpp
+     1>Game.cpp(42): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         GameManagement.cpp
+         Level.cpp
          main.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(2): error C2008: '.' : unexpected in macro definition
+         Object.cpp
+         Random.cpp
+         ResourceManager.cpp
          State_Gameplay.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\Dawn.h(2): error C2008: '.' : unexpected in macro definition
-     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)) -- FAILED.
+         State_Menu.cpp
+     1>State_Menu.cpp(47): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>State_Menu.cpp(53): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.exe" /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.lib" /MACHINE:X86 /SAFESEH Release\Coin.obj
+         Release\Dawn.obj
+         Release\Font.obj
+         Release\Game.obj
+         Release\GameManagement.obj
+         Release\Level.obj
+         Release\main.obj
+         Release\Object.obj
+         Release\Random.obj
+         Release\ResourceManager.obj
+         Release\State_Gameplay.obj
+         Release\State_Menu.obj
+         Generating code
+         Finished generating code
+         SDL.vcxproj -> C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.exe
+     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:06.34
+Time Elapsed 00:00:22.90

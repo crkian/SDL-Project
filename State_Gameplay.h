@@ -5,6 +5,9 @@
 #include "ResourceManager.h"
 #include "Dawn.h"
 #include "Coin.h"
+#include "Level.h"
+#include "Font.h"
+
 
 class State_Gameplay : public GameState // derive this class from GameState
 {
@@ -14,9 +17,14 @@ private:
 	SDL_Texture* test_tex; //pointer to SDL Texture
 
 	Dawn dawn; //has been added to the game
+	Level* level;
+
 
 	std::vector<Coin*> coins; //add coins to the game
 
+	Font* font;
+
+	unsigned int score;
 public:
 	bool Init(Game* game); //Not virtual, do not derive from this class, will need to define function bodies
 	void HandleEvents(SDL_Event* event);

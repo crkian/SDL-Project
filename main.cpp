@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "State_Gameplay.h"
+#include "State_Menu.h"
 
 int main(int argc, char** args)
 {

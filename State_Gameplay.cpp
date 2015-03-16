@@ -28,19 +28,26 @@ bool State_Gameplay::Init(Game* game)
 		return false;
 	}
 
-	//this is the pointer return for the test
+	font= new Font(game, rm->getTexture("font_texture.png"),16,16,8,16);
 
-	test_tex=rm->getTexture("images/character.png");
-	
-	//called after the textures
+
+
+
+	level=new Level(game, rm);
+	level->Init();
+
+		//called after the textures
 
 	dawn.Init(game, rm);
 	
-	for(int i=0; i<20; i++)
+	for(size_t i=0; i < 10; i++)
 	{
 		coins.push_back(new Coin());
 		coins.back()->Init(game,rm);
 	}
+
+	score= 0;
+
 	return true;
 
 }
@@ -74,32 +81,30 @@ void State_Gameplay::Update(float deltaTime)
 	//this causes no delay to the framerate
 	dawn.Update(deltaTime);
 
-	for(int i=0; i<coins.size(); i++)
+	for(size_t i=0; i < coins.size(); i++)
 	{
 		coins[i]->Update(deltaTime);
 		if(coins[i]->collidesWith(&dawn))
 		{
 			coins[i]->Relocate();
+			score++;
 		}
 	}
 
 }
 void State_Gameplay::Render()
 {
-	SDL_Rect dst;
-	dst.x=32;
-	dst.y=32;
-	dst.w=64;
-	dst.h=128;
 
-	SDL_RenderCopy(game->getRenderer(), test_tex, NULL, &dst);
+	level->Render();
 
-	dawn.Render();
-
-	for(int i=0; i<coins.size(); i++)
+		for(size_t i=0; i < coins.size(); i++)
 	{
 		coins[i]->Render();
 	}
+
+	dawn.Render();
+
+
 
 }
 void State_Gameplay::Quit()
@@ -108,10 +113,13 @@ void State_Gameplay::Quit()
 
 //remove the coins
 
-	for(int i=0; i<coins.size(); i++)
+	for(size_t i=0; i<coins.size(); i++)
 	{
 		delete coins[i];
 	}
 	coins.clear();
+	delete font;
+	delete level;
+delete rm;
 
 }
