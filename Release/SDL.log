@@ -1,11 +1,11 @@
-﻿Build started 16/03/2015 23:17:54.
+﻿Build started 16/03/2015 23:49:04.
      1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt State_Gameplay.cpp
          State_Gameplay.cpp
-     1>State_Gameplay.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-     1>State_Gameplay.cpp(97): warning C4018: '<' : signed/unsigned mismatch
-     1>State_Gameplay.cpp(112): warning C4018: '<' : signed/unsigned mismatch
+     1>State_Gameplay.cpp(82): warning C4018: '<' : signed/unsigned mismatch
+     1>State_Gameplay.cpp(98): warning C4018: '<' : signed/unsigned mismatch
+     1>State_Gameplay.cpp(114): warning C4018: '<' : signed/unsigned mismatch
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.exe" /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Release\SDL.lib" /MACHINE:X86 /SAFESEH Release\Coin.obj
          Release\Dawn.obj
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.93
+Time Elapsed 00:00:06.08

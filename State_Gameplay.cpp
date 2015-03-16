@@ -1,3 +1,4 @@
+#pragma warning(disable:4996)
 #include "State_Gameplay.h" //include StateGameplay into the mix
 
 
@@ -101,7 +102,8 @@ void State_Gameplay::Render()
 
 	dawn.Render();
 
-
+		char buffer[64];
+	font->RenderString(0, 0, "SCORE: " + std::string(itoa(score, buffer, 10)));
 
 }
 void State_Gameplay::Quit()
