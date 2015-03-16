@@ -1,6 +1,5 @@
-#include "Game.h"
 #include "Level.h"
-#include "ResourceManager.h"
+
 
 
 //Basic adding of tile depending on width and height, uses to for loops

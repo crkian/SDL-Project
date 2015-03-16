@@ -13,6 +13,7 @@ private:
 	Font* font;
 
 	float blinking;	
+
 public:
 	bool Init(Game* game);
 	void HandleEvents(SDL_Event* event);

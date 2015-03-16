@@ -6,6 +6,9 @@
 #define LEVEL_WIDTH 20
 #define LEVEL_HEIGHT 15
 
+#include <SDL.h>
+#include <SDL_image.h>
+
 #include "Game.h"
 #include "ResourceManager.h"
 

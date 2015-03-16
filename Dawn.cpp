@@ -6,8 +6,8 @@ this->game = game;
 this->rm=rm;
 
 //this puts the sprite in the middle of the screen
-x=160-8;
-y=120-16;
+x=160 - 8;
+y=120 - 16;
 
 //match the frame size
 sizeX=16;

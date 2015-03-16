@@ -19,7 +19,7 @@ void Font::RenderChar(float x, float y, unsigned char data)
 	SDL_Rect src_rect, dst_rect;
 
 	src_rect.x=(data % num_charsX) * char_width;
-	src_rect.y=(data/num_charsX) * char_height;
+	src_rect.y=(data / num_charsX) * char_height;
 	src_rect.w = char_width;
 	src_rect.h = char_height;
 

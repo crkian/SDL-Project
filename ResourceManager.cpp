@@ -1,8 +1,6 @@
-// We will impliment the constructor
-
 #include "ResourceManager.h"
 #include "Game.h"
-
+// We will impliment the constructor
 
 ResourceManager::ResourceManager(Game* game)
 {
@@ -46,6 +44,7 @@ SDL_Texture* ResourceManager::getTexture(std::string filename)
 	std::map<std::string, SDL_Texture*>::iterator i;
 	//seachesthe hash map for the ket specified it it fails it ends
 
+	i=textures.find(filename);
 	//next assigns the value of the pair to texture
 
 	texture = i->second;

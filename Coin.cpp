@@ -1,4 +1,3 @@
-#include "Game.h"
 #include "Coin.h"
 #include "Random.h"
 
@@ -39,7 +38,7 @@ void Coin::Render()
 void Coin::Relocate()
 {
 	//random generation of coins, without hitting theside
-	x=Random::Int(4,320-16-4);
-	y=Random::Int(4,240-16-4);
+	x=Random::Int(4,320 - 16 -4);
+	y=Random::Int(4,240 - 16 -4);
 }
 

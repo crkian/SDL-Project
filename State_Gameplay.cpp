@@ -17,10 +17,10 @@ bool State_Gameplay::Init(Game* game)
 
 	try // if image goes wrong try and catch detects it, prints error and exitsprogramme
 	{
-		rm->loadTexture("images/character.png");
-		rm->loadTexture("images/tile_01.png");
-		rm->loadTexture("images/font_texture.png");
-		rm->loadTexture("images/item.png");
+		rm->loadTexture("character.png");
+		rm->loadTexture("tile_01.png");
+		rm->loadTexture("font_texture.png");
+		rm->loadTexture("item.png");
 	}
 	catch(std::runtime_error &e)
 	{
@@ -30,9 +30,6 @@ bool State_Gameplay::Init(Game* game)
 
 	font= new Font(game, rm->getTexture("font_texture.png"),16,16,8,16);
 
-
-
-
 	level=new Level(game, rm);
 	level->Init();
 
@@ -40,7 +37,7 @@ bool State_Gameplay::Init(Game* game)
 
 	dawn.Init(game, rm);
 	
-	for(size_t i=0; i < 10; i++)
+	for(int i=0; i < 10; i++)
 	{
 		coins.push_back(new Coin());
 		coins.back()->Init(game,rm);
@@ -81,7 +78,7 @@ void State_Gameplay::Update(float deltaTime)
 	//this causes no delay to the framerate
 	dawn.Update(deltaTime);
 
-	for(size_t i=0; i < coins.size(); i++)
+	for(int i=0; i < coins.size(); i++)
 	{
 		coins[i]->Update(deltaTime);
 		if(coins[i]->collidesWith(&dawn))
@@ -97,7 +94,7 @@ void State_Gameplay::Render()
 
 	level->Render();
 
-		for(size_t i=0; i < coins.size(); i++)
+		for(int i=0; i < coins.size(); i++)
 	{
 		coins[i]->Render();
 	}
@@ -109,11 +106,10 @@ void State_Gameplay::Render()
 }
 void State_Gameplay::Quit()
 {
-	delete rm; //deletes the resource manager
 
 //remove the coins
 
-	for(size_t i=0; i<coins.size(); i++)
+	for(int i=0; i<coins.size(); i++)
 	{
 		delete coins[i];
 	}

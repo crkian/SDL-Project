@@ -105,8 +105,8 @@ void Game::Quit()
 	while(states.size()>0);
 	// delete the space used
 	{
+		states.back()->Quit();
 		delete states.back();
-
 		states.pop_back();
 	}
 	SDL_DestroyRenderer(renderer);
