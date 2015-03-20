@@ -122,4 +122,3 @@ SDL_Renderer* Game::getRenderer()
 {
 	return renderer;
 }
-
