@@ -1,6 +1,6 @@
-#ifndef GAME_STATE_H // inclusion quards stop gamestate being included more than once
+#ifndef GAME_STATE_H
 #define GAME_STATE_H
-
+/* inclusion quards stop gamestate being included more than once*/
 #include "Game.h"
 
 class GameState

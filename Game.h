@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-// Will be used in GameState.h and cant include in both due to infinate recursion
-// Just declaration here
+/* Will be used in GameState.h and cant include in both due to infinate recursion*/
+/* Just declaration here*/
 #include <SDL.h>
 #include <vector>
 
@@ -16,20 +16,20 @@ private:
 	SDL_Event event;
 
 
-	// now include window incase we use window elsewhere in the programme
+	/* now include window incase we use window elsewhere in the programme*/
 
 	int screen_width;
 	int screen_height;
 
-	//for terminating the programme
+	/*for terminating the programme*/
 
 	bool quit;
 
-	//This is for the stack
+	/*This is for the stack*/
 
 	std::vector<GameState*>states;
 
-	//Calculate time
+	/*Calculate time*/
 
 	Uint32 new_time;
 	Uint32 old_time;
@@ -39,18 +39,18 @@ public:
 
 	bool Init(GameState* state);
 	void Thread(); 
-	//start the main thread and loop till quit
+	/*start the main thread and loop till quit*/
 
 private:
 
-	//loop functions
+	/*loop functions*/
 	void Update();
 	void Render();
 
 	void Quit(); //free resources and clean up
 
 
-	//State management
+	/*State management*/
 public:
 	void PushState(GameState* state);
 	void PopState(); //pop check last state and not take
@@ -58,7 +58,7 @@ public:
 	
 	void setQuit(); //will quit whatever
 
-	//renderer used more than once  so use a get function
+	/*renderer used more than once  so use a get function*/
 	SDL_Renderer* getRenderer();
 };
 

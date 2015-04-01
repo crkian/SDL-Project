@@ -103,14 +103,11 @@
     <ClCompile Include="State_Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="character.png" />
-    <Image Include="font_texture.png" />
-    <Image Include="images\character.png" />
-    <Image Include="images\font_texture.png" />
-    <Image Include="images\item.png" />
-    <Image Include="images\tile_01.png" />
-    <Image Include="item.png" />
-    <Image Include="tile_01.png" />
+    <Image Include="Data\character.png" />
+    <Image Include="Data\font_texture.png" />
+    <Image Include="Data\item.png" />
+    <Image Include="Data\tile_01.png" />
+    <Image Include="Data\title.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

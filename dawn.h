@@ -6,21 +6,21 @@
 #include <SDL_image.h>
 
 
-class Dawn:public Object
+class Dawn : public Object
 {
 private:
-	//adjusts speed, variable rather than constant incase needed elsewhere
+	/*adjusts speed, variable rather than constant incase needed elsewhere*/
 	float move_speed;
 
-	//pointer to the texture from resource manager
+	/*pointer to the texture from resource manager*/
 	SDL_Texture* sheet;
 
-	//set up for the texture page with row and column
+	/*set up for the texture page with row and column*/
 	float sheet_row;
 	float sheet_column;
 	float sheet_animSpeed;
 
-	// moves the page along on the texture
+	/* moves the page along on the texture*/
 	float dirX, dirY;
 
 public:
@@ -28,7 +28,7 @@ public:
 	void Update(float deltaTime);
 	void Render();
 
-	// sets dirX and dirY
+	/* sets dirX and dirY */
 	void Move (int dx, int dy);
 };
 

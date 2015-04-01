@@ -7,13 +7,13 @@
 class Object
 {
 protected:
-	//position in world
+	/*position in world*/
 	float x, y;
 
-	//size in pixels
+	/*size in pixels*/
 	float sizeX, sizeY;
 
-	//pointers for renderer and textures
+	/*pointers for renderer and textures*/
 	Game* game;
 	ResourceManager* rm;
 	
@@ -21,9 +21,9 @@ protected:
 	SDL_Rect dest_rect;
 
 public:
-	virtual void Init(Game* game, ResourceManager* rm) =0;
+	virtual void Init(Game* game, ResourceManager* rm) = 0;
 	virtual void Update(float deltaTime) = 0;
-	virtual void Render()=0;
+	virtual void Render() = 0;
 
 	//collision
 	bool collidesWith(Object* other);

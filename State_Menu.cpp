@@ -9,7 +9,7 @@ bool State_Menu::Init(Game* game)
 
 	try
 	{		
-		rm->loadTexture("font_texture.png");		
+		rm->loadTexture("Data/font_texture.png");		
 	}
 	catch(std::runtime_error &e)
 	{
@@ -17,7 +17,7 @@ bool State_Menu::Init(Game* game)
 		return false;
 	}
 
-	font = new Font(game, rm->getTexture("font_texture.png"), 16, 16, 8, 16);	
+	font = new Font(game, rm->getTexture("Data/font_texture.png"), 16, 16, 8, 16);	
 
 	blinking = 0.0f;
 

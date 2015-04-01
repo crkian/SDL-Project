@@ -1,4 +1,3 @@
-#pragma warning(disable:4996)
 #include "State_Gameplay.h" //include StateGameplay into the mix
 
 
@@ -10,7 +9,7 @@ declare in .h and define in .cpp
 
 bool State_Gameplay::Init(Game* game)
 {
-	//load all four images
+	/*load all four images*/
 
 	this->game =game; //check points to same address for variable
 
@@ -18,26 +17,26 @@ bool State_Gameplay::Init(Game* game)
 
 	try // if image goes wrong try and catch detects it, prints error and exitsprogramme
 	{
-		rm->loadTexture("character.png");
-		rm->loadTexture("tile_01.png");
-		rm->loadTexture("font_texture.png");
-		rm->loadTexture("item.png");
+		rm->loadTexture("Data/character.png");
+		rm->loadTexture("Data/tile_01.png");
+		rm->loadTexture("Data/font_texture.png");
+		rm->loadTexture("Data/item.png");
 	}
 	catch(std::runtime_error &e)
 	{
-		std::cerr<<e.what()<< std::endl;
+		std::cerr<<e.what() << std::endl;
 		return false;
 	}
 
-	font= new Font(game, rm->getTexture("font_texture.png"),16,16,8,16);
+	font= new Font(game, rm->getTexture("Data/font_texture.png"),16,16,8,16);
 
 	level=new Level(game, rm);
 	level->Init();
 
-		//called after the textures
+	/*called after the textures*/
 
 	dawn.Init(game, rm);
-	
+
 	for(int i=0; i < 10; i++)
 	{
 		coins.push_back(new Coin());
@@ -60,11 +59,11 @@ void State_Gameplay::HandleEvents(SDL_Event* event)
 }
 void State_Gameplay::Update(float deltaTime)
 {
-	// keyboard input
+	/* keyboard input*/
 
 	const Uint8* keyboard = SDL_GetKeyboardState(NULL);
 
-// no if else so we can move in a diagonal
+	/* no if else so we can move in a diagonal*/
 
 	if(keyboard[SDL_SCANCODE_RIGHT])
 		dawn.Move(1,0);
@@ -76,10 +75,10 @@ void State_Gameplay::Update(float deltaTime)
 		dawn.Move(0,1);
 
 
-	//this causes no delay to the framerate
+	/*this causes no delay to the framerate*/
 	dawn.Update(deltaTime);
 
-	for(int i=0; i < coins.size(); i++)
+	for(int i=0; i<coins.size(); i++)
 	{
 		coins[i]->Update(deltaTime);
 		if(coins[i]->collidesWith(&dawn))
@@ -95,21 +94,21 @@ void State_Gameplay::Render()
 
 	level->Render();
 
-		for(int i=0; i < coins.size(); i++)
+	for(int i=0; i<coins.size(); i++)
 	{
 		coins[i]->Render();
 	}
 
 	dawn.Render();
 
-		char buffer[64];
-	font->RenderString(0, 0, "SCORE: " + std::string(itoa(score, buffer, 10)));
+	char buffer[64];
+	font->RenderString(0, 0, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));
 
 }
 void State_Gameplay::Quit()
 {
 
-//remove the coins
+	/*remove the coins*/
 
 	for(int i=0; i<coins.size(); i++)
 	{
@@ -118,6 +117,6 @@ void State_Gameplay::Quit()
 	coins.clear();
 	delete font;
 	delete level;
-delete rm;
+	delete rm;
 
 }

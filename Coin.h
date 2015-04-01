@@ -3,7 +3,7 @@
 
 #include "Object.h"
 
-class Coin:public Object
+class Coin : public Object
 {
 private:
 	SDL_Texture* texture;

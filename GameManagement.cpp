@@ -2,16 +2,16 @@
 #include "GameState.h"
 
 void Game::PushState(GameState* state)
-	// sets state totop of stack, if it goes wrong quit flag=true
+	/* sets state totop of stack, if it goes wrong quit flag=true*/
 {
 	states.push_back(state);
-if(state->Init(this)==false)
-{
-	quit=true;
-}
+	if(state->Init(this) == false)
+	{
+		quit=true;
+	}
 }
 
-//now the reverse, if last state popped continue quit
+/*now the reverse, if last state popped continue quit*/
 
 void Game::PopState()
 {
@@ -19,7 +19,7 @@ void Game::PopState()
 	delete states.back();
 	states.pop_back();
 
-	if (states.size()==0)
+	if (states.size() == 0)
 	{
 		quit = true;
 	}

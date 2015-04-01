@@ -9,33 +9,34 @@ Game::Game()
 	window = NULL;
 	renderer=NULL;
 
-	screen_width=620;
-	screen_height=640;
+	screen_width=320;
+	screen_height=340;
 
 	old_time=0;
 	quit=false;
 }
 
 bool Game::Init(GameState* state)
-{ // Calls and starts SDL, system could fail so need failsafes
-	if(SDL_Init(SDL_INIT_EVERYTHING)<0)
+{ 
+	/* Calls and starts SDL, system could fail so need failsafes*/
+	if(SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
-		std::cerr <<SDL_GetError() << std::endl;
+		std::cerr << SDL_GetError() << std::endl;
 		return false;
 	}
-	// incase of window fail log error and exit
-	window = SDL_CreateWindow("Chris", SDL_WINDOWPOS_UNDEFINED,
+	/* incase of window fail log error and exit*/
+	window = SDL_CreateWindow("Blaster", SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED, screen_width, screen_height, SDL_WINDOW_SHOWN);
 	if(window==NULL)
 	{
-		std::cerr << SDL_GetError() <<std::endl;
+		std::cerr << SDL_GetError() << std::endl;
 		return false;
 	}
-	// same with renderer incase of fail, log error and exit
+	/* same with renderer incase of fail, log error and exit*/
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 	if(renderer==NULL)
 	{
-		std::cerr << SDL_GetError() <<std::endl;// cerr is better for logging errors of cout, seperates from standard output
+		std::cerr << SDL_GetError() << std::endl;// cerr is better for logging errors of cout, seperates from standard output
 		return false;
 	}
 
@@ -56,54 +57,54 @@ void Game::Thread() //check stackempty and does updating
 	Quit();
 }
 
-// Update function, checks the stack and updates it
+/* Update function, checks the stack and updates it*/
 
 void Game::Update()
 {
-	//check events queue and go process particular states
+	/*check events queue and go process particular states*/
 
 	while(SDL_PollEvent(&event))
 	{
-		if(states.size()>0)
+		if(states.size() > 0)
 			states.back()->HandleEvents(&event);
 	}
 
-	//Check to see if stack is empty asit might stillhold events
+	/*Check to see if stack is empty asit might stillhold events*/
 
-	if(states.size()>0)
+	if(states.size() > 0)
 	{
 		old_time = new_time;
 		new_time = SDL_GetTicks();
 
 		if(new_time > old_time)
 		{
-			float deltaTime = (float) (new_time - old_time) / 1000.0f;
+			float deltaTime = (float)(new_time - old_time) / 1000.0f;
 			states.back()->Update(deltaTime);
 		}
 	}
 }
 
-// Render function for the SDL stuff
+/* Render function for the SDL stuff*/
 
 void Game::Render()
 {
-	// clear buffer back
+	/* clear buffer back*/
 	SDL_RenderClear(renderer);
 
-	//render onto buffer back
-	if(states.size()>0)
+	/*render onto buffer back*/
+	if(states.size() > 0)
 		states.back()->Render();
 
-	//switch buffers
+	/*switch buffers*/
 
 	SDL_RenderPresent(renderer);
 }
 
 void Game::Quit()
 {
-	// As mentioned before if quit is called states on stack might need removing
-	while(states.size()>0);
-	// delete the space used
+	/* As mentioned before if quit is called states on stack might need removing*/
+	while(states.size() > 0);
+	/* delete the space used*/
 	{
 		states.back()->Quit();
 		delete states.back();
