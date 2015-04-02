@@ -49,7 +49,7 @@ void State_Menu::Render()
 	if((int)blinking > 0)
 		font->RenderString(160 - x, 140, text);
 
-	text = "T H E   C O I N   C O L L E C T O R";
+	text = "B L A S T E R";
 	x = text.length() * 8 / 2;	
 
 	font->RenderString(160 - x, 32, text);

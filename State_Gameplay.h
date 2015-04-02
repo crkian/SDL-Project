@@ -7,6 +7,7 @@
 #include "Level.h"
 #include "Coin.h"
 #include "Font.h"
+#include "Wall.h"
 
 
 class State_Gameplay : public GameState // derive this class from GameState
@@ -20,7 +21,7 @@ private:
 
 
 	std::vector<Coin*> coins; //add coins to the game
-
+	std::vector<Wall*> walls; //add coins to the game
 	Font* font;
 
 	unsigned int score;

@@ -21,6 +21,7 @@ bool State_Gameplay::Init(Game* game)
 		rm->loadTexture("Data/tile_01.png");
 		rm->loadTexture("Data/font_texture.png");
 		rm->loadTexture("Data/item.png");
+		rm->loadTexture("Data/wall.png");
 	}
 	catch(std::runtime_error &e)
 	{
@@ -41,6 +42,12 @@ bool State_Gameplay::Init(Game* game)
 	{
 		coins.push_back(new Coin());
 		coins.back()->Init(game,rm);
+	}
+
+		for(int i=0; i < 40; i++)
+	{
+		walls.push_back(new Wall());
+		walls.back()->Init(game,rm);
 	}
 
 	score= 0;
@@ -88,6 +95,16 @@ void State_Gameplay::Update(float deltaTime)
 		}
 	}
 
+		for(int i=0; i<walls.size(); i++)
+	{
+		walls[i]->Update(deltaTime);
+		if(walls[i]->collidesWith(&Coin))
+		{
+			walls[i]->Relocate();
+			score++;
+		}
+	}
+
 }
 void State_Gameplay::Render()
 {
@@ -97,6 +114,11 @@ void State_Gameplay::Render()
 	for(int i=0; i<coins.size(); i++)
 	{
 		coins[i]->Render();
+	}
+
+		for(int i=0; i<walls.size(); i++)
+	{
+		walls[i]->Render();
 	}
 
 	dawn.Render();
@@ -115,6 +137,12 @@ void State_Gameplay::Quit()
 		delete coins[i];
 	}
 	coins.clear();
+
+		for(int i=0; i<walls.size(); i++)
+	{
+		delete walls[i];
+	}
+	walls.clear();
 	delete font;
 	delete level;
 	delete rm;

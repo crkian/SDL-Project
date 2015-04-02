@@ -48,6 +48,9 @@
     <ClInclude Include="State_Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -86,6 +89,9 @@
     <ClCompile Include="State_Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Data\character.png">
@@ -101,6 +107,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Data\title.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Data\wall.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
