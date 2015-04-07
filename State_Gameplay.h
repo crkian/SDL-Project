@@ -21,7 +21,7 @@ private:
 
 
 	std::vector<Coin*> coins; //add coins to the game
-	std::vector<Wall*> walls; //add coins to the game
+	std::vector<Wall*> walls; //add walls to the game
 	Font* font;
 
 	unsigned int score;

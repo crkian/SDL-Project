@@ -9,7 +9,7 @@ declare in .h and define in .cpp
 
 bool State_Gameplay::Init(Game* game)
 {
-	/*load all four images*/
+	/*load all five images*/
 
 	this->game =game; //check points to same address for variable
 
@@ -18,7 +18,7 @@ bool State_Gameplay::Init(Game* game)
 	try // if image goes wrong try and catch detects it, prints error and exitsprogramme
 	{
 		rm->loadTexture("Data/character.png");
-		rm->loadTexture("Data/tile_01.png");
+		rm->loadTexture("Data/map.png");
 		rm->loadTexture("Data/font_texture.png");
 		rm->loadTexture("Data/item.png");
 		rm->loadTexture("Data/wall.png");
@@ -38,13 +38,13 @@ bool State_Gameplay::Init(Game* game)
 
 	dawn.Init(game, rm);
 
-	for(int i=0; i < 10; i++)
+	for(int i=0; i < 30; i++)
 	{
 		coins.push_back(new Coin());
 		coins.back()->Init(game,rm);
 	}
 
-		for(int i=0; i < 40; i++)
+	for(int i=0; i < 10; i++)
 	{
 		walls.push_back(new Wall());
 		walls.back()->Init(game,rm);
@@ -85,25 +85,38 @@ void State_Gameplay::Update(float deltaTime)
 	/*this causes no delay to the framerate*/
 	dawn.Update(deltaTime);
 
-	for(int i=0; i<coins.size(); i++)
+	if (score <=10)
 	{
-		coins[i]->Update(deltaTime);
-		if(coins[i]->collidesWith(&dawn))
+
+		for(int i=0; i<coins.size(); i++)
 		{
-			coins[i]->Relocate();
-			score++;
+			coins[i]->Update(deltaTime);
+			if(coins[i]->collidesWith(&dawn))
+			{
+				coins[i]->Relocate();
+				score++;
+			}
 		}
-	}
 
 		for(int i=0; i<walls.size(); i++)
-	{
-		walls[i]->Update(deltaTime);
-		if(walls[i]->collidesWith(&Coin))
 		{
-			walls[i]->Relocate();
-			score++;
+			walls[i]->Update(deltaTime);
+			if(walls[i]->collidesWith(&dawn))
+			{
+				walls[i]->Relocate();
+				score=score+2;
+			}
 		}
+
+if (score >10)
+{
+	std::string text = "Game Over";
+	float x = text.length() * 8 / 2;
+	SDL_Quit();
+}
+
 	}
+
 
 }
 void State_Gameplay::Render()
@@ -116,7 +129,7 @@ void State_Gameplay::Render()
 		coins[i]->Render();
 	}
 
-		for(int i=0; i<walls.size(); i++)
+	for(int i=0; i<walls.size(); i++)
 	{
 		walls[i]->Render();
 	}
@@ -138,7 +151,7 @@ void State_Gameplay::Quit()
 	}
 	coins.clear();
 
-		for(int i=0; i<walls.size(); i++)
+	for(int i=0; i<walls.size(); i++)
 	{
 		delete walls[i];
 	}

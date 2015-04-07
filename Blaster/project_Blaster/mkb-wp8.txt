@@ -1,0 +1,1 @@
+VC11_WP8TOOLSET;build_blaster_vc11_wp8toolset;

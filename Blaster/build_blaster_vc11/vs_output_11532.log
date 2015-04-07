@@ -1,0 +1,8 @@
+1>------ Build started: Project: Blaster_vc11, Configuration: x86 Debug Win32 ------
+1>  Blaster.cpp
+1>     Creating library Debug_Blaster_vc11_x86\Blaster.lib and object Debug_Blaster_vc11_x86\Blaster.exp
+1>  Blaster_vc11.vcxproj -> c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86
+1>  C:\Marmalade\7.5\s3e\python\python.exe .\process_map.py "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86"
+1>  "s3e_plink" -l "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86" 
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+

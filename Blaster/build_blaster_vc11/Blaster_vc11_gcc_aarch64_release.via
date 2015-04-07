@@ -1,0 +1,8 @@
+--dll="c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Release_Blaster_VC11_gcc_aarch64\Blaster.s3e"
+--data="c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data"
+--app-icf1="c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf"
+--config-txt1="c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.config.txt"
+--config-txt2="c:/marmalade/7.5/modules/iwutil/docs/iwutil.config.txt"
+--config-txt3="c:/marmalade/7.5/s3e/s3e.config.txt"
+--config-txt4="c:/marmalade/7.5/s3e\s3e.config.txt"
+--s3e-dir=c:/marmalade/7.5/s3e

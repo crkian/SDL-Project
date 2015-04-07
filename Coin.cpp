@@ -30,6 +30,6 @@ void Coin::Render()
 }
 void Coin::Relocate()
 {
-	x = Random::Int(4, 320 - 16 - 4);
-	y = Random::Int(4, 240 - 16 - 4);
+	x = Random::Int(4, 640 - 16 - 4);
+	y = Random::Int(4, 640 - 16 - 4);
 }

@@ -9,8 +9,8 @@ Game::Game()
 	window = NULL;
 	renderer=NULL;
 
-	screen_width=320;
-	screen_height=340;
+	screen_width=640;
+	screen_height=640;
 
 	old_time=0;
 	quit=false;

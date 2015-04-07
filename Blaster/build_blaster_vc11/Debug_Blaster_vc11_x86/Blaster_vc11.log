@@ -1,0 +1,25 @@
+﻿Build started 07/04/2015 15:06:20.
+     1>Project "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Marmalade\7.5\s3e\bin\CL.exe /c /Ic:/marmalade/7.5/modules/iwutil/h /Ic:/marmalade/7.5/modules/third_party/libjpeg/h /Ic:/marmalade/7.5/modules/third_party/zlib/h /Ic:/marmalade/7.5/modules/third_party/libpng/h /Ic:/marmalade/7.5/s3e/h /Ic:/marmalade/7.5/s3e/h/ext /Ic:/marmalade/7.5/s3e/h/std /Ic:/marmalade/7.5/s3e/h/std/c++ /Ic:/marmalade/7.5/s3e/h/ext_legacy /Ic:/marmalade/7.5/s3e/h/legacy /I. /ZI /nologo /W3 /WX- /MP /Od /Oy- /X /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_Blaster_vc11_x86\\" /Fd"Debug_Blaster_vc11_x86\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /S3Eproject /J /FI"c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\temp_defines_debug.h" ..\Blaster.cpp
+         Blaster.cpp
+       Link:
+         C:\Marmalade\7.5\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_Blaster_vc11_x86\Blaster.s86" /INCREMENTAL /NOLOGO /LIBPATH:c:/marmalade/7.5/modules/iwutil/lib/x86 /LIBPATH:c:/marmalade/7.5/modules/third_party/libjpeg/lib/x86 /LIBPATH:c:/marmalade/7.5/modules/third_party/zlib/lib/x86 /LIBPATH:c:/marmalade/7.5/modules/third_party/libpng/lib/x86 /LIBPATH:c:/marmalade/7.5/s3e/lib/x86 vc6_compat.lib iwutil_d.lib jpeg_d.lib z_d.lib png_d.lib s3e_cpp_d.lib s3e_d.lib s3e_api.lib /NODEFAULTLIB:libcmt /MANIFEST:NO /DEBUG /PDB:"Debug_Blaster_vc11_x86\Blaster.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /ENTRY:"DllEntryPoint" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_Blaster_vc11_x86\Blaster.lib" /MACHINE:X86  /include:_IwMain /include:_raise /include:_DllEntryPoint@12 /DLL Debug_Blaster_vc11_x86\Blaster.obj
+            Creating library Debug_Blaster_vc11_x86\Blaster.lib and object Debug_Blaster_vc11_x86\Blaster.exp
+         Blaster_vc11.vcxproj -> c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86
+       PostBuildEvent:
+         echo C:\Marmalade\7.5\s3e\python\python.exe .\process_map.py "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86"
+         chdir /d "c:\marmalade\7.5\s3e\tools"
+         C:\Marmalade\7.5\s3e\python\python.exe .\process_map.py "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86"
+         echo "s3e_plink" -l "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86" 
+         chdir /d "c:\marmalade\7.5\s3e\bin"
+         "s3e_plink" -l "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86" 
+         
+         :VCEnd
+         C:\Marmalade\7.5\s3e\python\python.exe .\process_map.py "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86"
+         "s3e_plink" -l "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_vc11_x86\Blaster.s86" 
+     1>Done Building Project "c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.26

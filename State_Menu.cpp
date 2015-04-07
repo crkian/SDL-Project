@@ -47,12 +47,26 @@ void State_Menu::Render()
 	float x = text.length() * 8 / 2;	
 
 	if((int)blinking > 0)
-		font->RenderString(160 - x, 140, text);
+		font->RenderString(320 - x, 350, text);
 
 	text = "B L A S T E R";
 	x = text.length() * 8 / 2;	
 
-	font->RenderString(160 - x, 32, text);
+	font->RenderString(320 - x, 32, text);
+
+		text = "Two Points for a Wall";
+	x = text.length() * 8 / 2;	
+	font->RenderString(320 - x, 64, text);
+
+		text = "One for a Coin";
+	x = text.length() * 8 / 2;	
+
+	font->RenderString(320 - x, 128, text);
+
+		text = "30 Point Limit";
+	x = text.length() * 8 / 2;	
+
+	font->RenderString(320 - x, 256, text);
 }
 void State_Menu::Quit()
 {

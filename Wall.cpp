@@ -28,8 +28,9 @@ void Wall::Render()
 {
 	SDL_RenderCopy(game->getRenderer(), texture, &source_rect, &dest_rect);
 }
+
 void Wall::Relocate()
 {
-	x = Random::Int(4, 320 - 16 - 4);
-	y = Random::Int(4, 240 - 16 - 4);
+x = Random::Int(4, 640 - 16 - 4);
+y = Random::Int(4, 640 - 16 - 4);
 }

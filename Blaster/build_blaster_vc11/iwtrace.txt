@@ -1,0 +1,254 @@
+-- START TRACE TO FILE --
+tracing to: ''
+MarmaladeSDK v7.5.0 [419376] (S3E Loader v4.40.0)
+Copyright (C) 2001-2014 Marmalade Technologies Ltd.
+System Info:
+ OS           : WINDOWS (3)
+ OS Version   : Windows 6.2 (6.2)
+ Device ID    : Windows Simulator (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : My Computer
+ Memory       : 1048576KiB
+07/04/15 15:06:42.736: [0x0000286c] DEVICE: Initialising FIBRE
+07/04/15 15:06:42.741: [0x0000286c] DEVICE: Initialising THREAD
+07/04/15 15:06:42.745: [0x0000286c] THREAD: s3eThreadCreateMain
+07/04/15 15:06:42.748: [0x00000fa0] DEVICE: Initialising SURFACE
+07/04/15 15:06:42.753: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+07/04/15 15:06:42.756: [0x00000fa0] SURFACE: s3eSurfaceSetup: matches native type
+07/04/15 15:06:42.760: [0x00000fa0] SURFACE: s3eSurfaceSetup: no user surface needed
+07/04/15 15:06:42.764: [0x00000fa0] SURFACE: done s3eSurfaceInit: 800x600 p:1600 (800x600 p:1600) o:0
+07/04/15 15:06:42.768: [0x00000fa0] DEVICE: Initialising EXT
+07/04/15 15:06:42.772: [0x00000fa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+07/04/15 15:06:42.776: [0x00000fa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+07/04/15 15:06:42.780: [0x00000fa0] EXT: registering extension: s3eCamera [0xa3e23039]
+07/04/15 15:06:42.784: [0x00000fa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+07/04/15 15:06:42.787: [0x00000fa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+07/04/15 15:06:42.791: [0x00000fa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+07/04/15 15:06:42.795: [0x00000fa0] EXT: registering extension: s3eSoundRecord [0x579dbf78]
+07/04/15 15:06:42.799: [0x00000fa0] EXT: registering extension: s3eTouchpad [0x1dbd7ce8]
+07/04/15 15:06:42.805: [0x00000fa0] EXT: registering extension: s3eCompass [0x40d632c6]
+07/04/15 15:06:42.809: [0x00000fa0] EXT: registering extension: Compass [0xd3653f1b]
+07/04/15 15:06:42.813: [0x00000fa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+07/04/15 15:06:42.817: [0x00000fa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+07/04/15 15:06:42.820: [0x00000fa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+07/04/15 15:06:42.824: [0x00000fa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+07/04/15 15:06:42.828: [0x00000fa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+07/04/15 15:06:42.832: [0x00000fa0] EXT: registering extension: s3eEval [0x167d1038]
+07/04/15 15:06:42.835: [0x00000fa0] EXT: registering extension: s3eExtEval [0xf0421449]
+07/04/15 15:06:42.839: [0x00000fa0] EXT: registering extension: s3eHighResTimer [0x41f2dedb]
+07/04/15 15:06:42.842: [0x00000fa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+07/04/15 15:06:42.846: [0x00000fa0] EXT: registering extension: s3eCameraCapture [0xd36aceed]
+07/04/15 15:06:42.850: [0x00000fa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+07/04/15 15:06:42.855: [0x00000fa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+07/04/15 15:06:42.858: [0x00000fa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+07/04/15 15:06:42.862: [0x00000fa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+07/04/15 15:06:42.866: [0x00000fa0] EXT: registering extension: s3eImagePicker [0xd2fc1d51]
+07/04/15 15:06:42.870: [0x00000fa0] EXT: registering extension: s3eTest [0x168503f0]
+07/04/15 15:06:42.873: [0x00000fa0] EXT: registering extension: s3eSMS [0x17f480c3]
+07/04/15 15:06:42.877: [0x00000fa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+07/04/15 15:06:42.881: [0x00000fa0] EXT: registering extension: Metrics [0xbe57ec9c]
+07/04/15 15:06:42.884: [0x00000fa0] EXT: registering extension: s3eLocation [0x91944229]
+07/04/15 15:06:42.887: [0x00000fa0] EXT: registering extension: Location [0x7604d91e]
+07/04/15 15:06:42.890: [0x00000fa0] EXT: registering extension: Win32Surface [0x909755c1]
+07/04/15 15:06:42.894: [0x00000fa0] EXT: registering extension: Win32UIProcessMessage [0x48f2a5ba]
+07/04/15 15:06:42.898: [0x00000fa0] EXT: registering extension: Win32DataDirChange [0xbfcfc057]
+07/04/15 15:06:42.902: [0x00000fa0] DEVICE: Initialising CONFIG
+07/04/15 15:06:42.906: [0x00000fa0] DEVICE: Initialising TIMER
+07/04/15 15:06:42.909: [0x00000fa0] DEVICE: Initialising COMPRESSION
+07/04/15 15:06:42.913: [0x00000fa0] DEVICE: DeviceInit done: services=0x0a216148
+07/04/15 15:06:42.917: [0x00000fa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+07/04/15 15:06:42.921: [0x00000fa0] EXT: initializing extension: s3eWindow
+07/04/15 15:06:42.924: [0x00000fa0] EXT: initializing extension: s3eWindow 0x0129cb00
+07/04/15 15:06:42.927: [0x00000fa0] DEVICE: SetupPaths: NULL
+07/04/15 15:06:42.931: [0x00000fa0] LOADER: ParseCommandLineData [-via:"c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via"]
+07/04/15 15:06:42.935: [0x00000fa0] LOADER: setting [commandline]  via=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:42.940: [0x00000fa0] LOADER: parsing via file: c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:42.945: [0x00000fa0] FILE: s3eFileOpen('c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via', 'r') succeeded, id=20309752 p=0x0135e6f8
+07/04/15 15:06:42.948: [0x00000fa0] LOADER: reading 661 bytes from via files
+07/04/15 15:06:42.951: [0x00000fa0] FILE: s3eFileClose h=0x0135e6f8
+07/04/15 15:06:42.954: [0x00000fa0] LOADER: ParseCommandLineData [-via:"c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via" --dll="c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SD
+07/04/15 15:06:42.959: [0x00000fa0] LOADER: setting [commandline]  via=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:42.963: [0x00000fa0] LOADER: setting [commandline]  dll=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86
+07/04/15 15:06:42.967: [0x00000fa0] LOADER: setting [commandline]  data=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data
+07/04/15 15:06:42.971: [0x00000fa0] LOADER: setting [commandline]  checks3edir=1
+07/04/15 15:06:42.974: [0x00000fa0] LOADER: setting [commandline]  app-icf1=c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf
+07/04/15 15:06:42.978: [0x00000fa0] LOADER: setting [commandline]  config-txt1=c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.config.txt
+07/04/15 15:06:42.982: [0x00000fa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.5/modules/iwutil/docs/iwutil.config.txt
+07/04/15 15:06:42.986: [0x00000fa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.5/s3e/s3e.config.txt
+07/04/15 15:06:42.990: [0x00000fa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.5/s3e\s3e.config.txt
+07/04/15 15:06:42.993: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.5/s3e
+07/04/15 15:06:42.999: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+07/04/15 15:06:43.001: [0x00000fa0] FILE: fs[00]: system[rom://] 'c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data'
+07/04/15 15:06:43.005: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+07/04/15 15:06:43.008: [0x00000fa0] FILE: listed 2 active filesystems
+07/04/15 15:06:43.013: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+07/04/15 15:06:43.016: [0x00000fa0] FILE: fs[00]: system[rom://] 'c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data'
+07/04/15 15:06:43.021: [0x00000fa0] FILE: fs[01]: system[ram://] 'c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data-ram'
+07/04/15 15:06:43.025: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+07/04/15 15:06:43.030: [0x00000fa0] FILE: listed 3 active filesystems
+07/04/15 15:06:43.039: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+07/04/15 15:06:43.042: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+07/04/15 15:06:43.046: [0x00000fa0] LOADER: Using data directory c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data as ROM drive
+07/04/15 15:06:43.050: [0x00000fa0] LOADER: Using directory c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data-ram as RAM drive
+07/04/15 15:06:43.055: [0x00000fa0] FILE: s3eFileOpen('raw://c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.config.txt', 'r') succeeded, id=1000 p=0x0135fdcc
+07/04/15 15:06:43.058: [0x00000fa0] FILE: s3eFileClose h=0x0135fdcc
+07/04/15 15:06:43.084: [0x00000fa0] FILE: s3eFileOpen('raw://c:/marmalade/7.5/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1001 p=0x0135fee8
+07/04/15 15:06:43.086: [0x00000fa0] FILE: s3eFileClose h=0x0135fee8
+07/04/15 15:06:43.100: [0x00000fa0] FILE: s3eFileOpen('raw://c:/marmalade/7.5/s3e/s3e.config.txt', 'r') succeeded, id=1002 p=0x01360004
+07/04/15 15:06:43.123: [0x00000fa0] FILE: s3eFileClose h=0x01360004
+07/04/15 15:06:43.126: [0x00000fa0] FILE: s3eFileOpen('raw://c:/marmalade/7.5/s3e\s3e.config.txt', 'r') succeeded, id=1003 p=0x01360120
+07/04/15 15:06:43.147: [0x00000fa0] FILE: s3eFileClose h=0x01360120
+07/04/15 15:06:43.169: [0x00000fa0] FILE: s3eFileOpen('raw://c:\marmalade\7.5\s3e/s3e.icf', 'rb') succeeded, id=1004 p=0x0136023c
+07/04/15 15:06:43.171: [0x00000fa0] LOADER: Loading config from: c:\marmalade\7.5\s3e/s3e.icf
+07/04/15 15:06:43.177: [0x00000fa0] FILE: s3eFileClose h=0x0136023c
+07/04/15 15:06:43.182: [0x00000fa0] LOADER: Loading app-icf from command line specified location c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf
+07/04/15 15:06:43.186: [0x00000fa0] FILE: s3eFileOpen('raw://c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf', 'rb') succeeded, id=1005 p=0x01360358
+07/04/15 15:06:43.189: [0x00000fa0] LOADER: Loading config from: raw://c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf
+07/04/15 15:06:43.192: [0x00000fa0] FILE: s3eFileClose h=0x01360358
+07/04/15 15:06:43.196: [0x00000fa0] LOADER: ParseCommandLineData [-via:"c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via"]
+07/04/15 15:06:43.198: [0x00000fa0] LOADER: setting [commandline]  via=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:43.201: [0x00000fa0] LOADER: parsing via file: c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:43.203: [0x00000fa0] FILE: s3eFileOpen('c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via', 'r') succeeded, id=1006 p=0x01360474
+07/04/15 15:06:43.206: [0x00000fa0] LOADER: reading 661 bytes from via files
+07/04/15 15:06:43.208: [0x00000fa0] FILE: s3eFileClose h=0x01360474
+07/04/15 15:06:43.210: [0x00000fa0] LOADER: ParseCommandLineData [-via:"c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via" --dll="c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SD
+07/04/15 15:06:43.213: [0x00000fa0] LOADER: setting [commandline]  via=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Blaster_vc11_debug.via
+07/04/15 15:06:43.215: [0x00000fa0] LOADER: setting [commandline]  dll=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86
+07/04/15 15:06:43.217: [0x00000fa0] LOADER: setting [commandline]  data=c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data
+07/04/15 15:06:43.220: [0x00000fa0] LOADER: setting [commandline]  checks3edir=1
+07/04/15 15:06:43.222: [0x00000fa0] LOADER: setting [commandline]  app-icf1=c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.icf
+07/04/15 15:06:43.225: [0x00000fa0] LOADER: setting [commandline]  config-txt1=c:/Users/blogs_000/Documents/Visual Studio 2012/Projects/SDL/SDL/Blaster/data/app.config.txt
+07/04/15 15:06:43.227: [0x00000fa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.5/modules/iwutil/docs/iwutil.config.txt
+07/04/15 15:06:43.229: [0x00000fa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.5/s3e/s3e.config.txt
+07/04/15 15:06:43.231: [0x00000fa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.5/s3e\s3e.config.txt
+07/04/15 15:06:43.234: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.5/s3e
+07/04/15 15:06:43.237: [0x00000fa0] LOADER: s3eExecMemoryCheck: Memory free: 1048576K
+07/04/15 15:06:43.264: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Users\BLOGS_~1\AppData\Local\Temp\\_marm_temp_test_', 'w') succeeded, id=1007 p=0x01360590
+07/04/15 15:06:43.267: [0x00000fa0] FILE: s3eFileClose h=0x01360590
+07/04/15 15:06:43.277: [0x00000fa0] FILE: new filesystem: drive=4 type=0 ro=0 name=tmp://
+07/04/15 15:06:43.281: [0x00000fa0] FILE: fs[00]: system[rom://] 'c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data'
+07/04/15 15:06:43.285: [0x00000fa0] FILE: fs[01]: system[ram://] 'c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\data-ram'
+07/04/15 15:06:43.289: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+07/04/15 15:06:43.292: [0x00000fa0] FILE: fs[04]: system[tmp://] 'C:\Users\BLOGS_~1\AppData\Local\Temp\'
+07/04/15 15:06:43.296: [0x00000fa0] FILE: listed 4 active filesystems
+07/04/15 15:06:43.345: [0x00000fa0] SURFACE: scaling=1
+07/04/15 15:06:43.388: [0x0000179c] WINDOW: Enqueuing S3E_WINDOW_GAINED_FOCUS
+07/04/15 15:06:43.487: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+07/04/15 15:06:43.489: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB888 native=RGB565)
+07/04/15 15:06:43.499: [0x00000fa0] EXT: Registering user-supplied extensions
+07/04/15 15:06:43.504: [0x00000fa0] FIBRE: stack switch : enabled
+07/04/15 15:06:43.507: [0x00000fa0] FIBRE: fast switch  : disabled
+07/04/15 15:06:43.512: [0x00000fa0] FIBRE: global lock  : enabled
+07/04/15 15:06:43.516: [0x00000fa0] FIBRE: fast lock    : disabled
+07/04/15 15:06:43.521: [0x00000fa0] FIBRE: thunks       : enabled
+07/04/15 15:06:43.526: [0x00000fa0] LOADER: Calling s3eDeviceInit()
+07/04/15 15:06:43.531: [0x00000fa0] DEVICE: DeviceInit: services=0xfffdffff [0xe5dc9eb7]
+07/04/15 15:06:43.535: [0x00000fa0] DEVICE: Initialising CALLBACKS
+07/04/15 15:06:43.538: [0x00000fa0] DEVICE: Initialising CRYPTO
+07/04/15 15:06:43.543: [0x00000fa0] DEVICE: Initialising ERROR
+07/04/15 15:06:43.548: [0x00000fa0] DEVICE: Initialising SOCKET
+07/04/15 15:06:43.552: [0x00000fa0] DEVICE: Initialising STORAGE
+07/04/15 15:06:43.557: [0x00000fa0] DEVICE: Initialising VIBRA
+07/04/15 15:06:43.563: [0x00000fa0] DEVICE: Initialising KEYBOARD
+07/04/15 15:06:43.571: [0x00000fa0] DEVICE: Initialising POINTER
+07/04/15 15:06:43.575: [0x00000fa0] DEVICE: Initialising ACCELEROMETER
+07/04/15 15:06:43.579: [0x00000fa0] ACCELEROMETER: damping=0 scaling=0
+07/04/15 15:06:43.583: [0x00000fa0] DEVICE: Initialising SOUND
+07/04/15 15:06:43.979: [0x00000fa0] SOUND: stereo sound enabled
+07/04/15 15:06:43.981: [0x00000fa0] SOUND: s3eSoundStop: started=0
+07/04/15 15:06:43.985: [0x00000fa0] SOUND: SetMasterVolume: 255 -> 256
+07/04/15 15:06:43.989: [0x00000fa0] DEVICE: Initialising AUDIO
+07/04/15 15:06:43.992: [0x00000fa0] AUDIO: Number of channels = 16
+07/04/15 15:06:43.996: [0x00000fa0] DEVICE: Initialising VIDEO
+07/04/15 15:06:43.999: [0x00000fa0] DEVICE: Initialising LICENSE
+07/04/15 15:06:44.003: [0x00000fa0] DEVICE: Initialising GL
+07/04/15 15:06:44.006: [0x00000fa0] DEVICE: DeviceInit done: services=0xfffdffff
+07/04/15 15:06:44.060: [0x00000fa0] SPLASH: displaying debug splash-screen
+07/04/15 15:06:44.127: [0x00000fa0] LICENSE: SplashScreenRequired: Splash set in licenseText
+07/04/15 15:06:44.206: [0x00000fa0] LICENSE: LicenseType: ret true : output=Free
+07/04/15 15:06:44.209: [0x00000fa0] SPLASH: No splash screen specified
+07/04/15 15:06:44.261: [0x00000fa0] LOADER: s3eExecInit Done
+07/04/15 15:06:44.290: [0x00000fa0] LOADER: found initial S3E file: raw://c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86
+07/04/15 15:06:44.294: [0x00000fa0] DEVICE: s3eExecPushNext: raw://c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86 [root=NULL 0x00000000 0x00000000]
+07/04/15 15:06:44.299: [0x00000fa0] DEVICE: s3eExecPushNext: raw://c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86
+07/04/15 15:06:44.303: [0x00000fa0] LOADER: s3eExecDoExecuteLoop
+07/04/15 15:06:44.396: [0x00000fa0] LICENSE: LicenseType: ret true : output=Free
+07/04/15 15:06:44.402: [0x00000fa0] SOCKET: s3eSocketCreate -> p=0x01404b9c id=3000
+07/04/15 15:06:44.405: [0x00000fa0] SOCKET: s3eInetLookup: 'www.google-analytics.com'
+07/04/15 15:06:44.562: [0x00000fa0] SOCKET: s3eInetLookup (synchronous): done DNS: '2.127.252.241:0'
+07/04/15 15:06:44.565: [0x00000fa0] SOCKET: s3eSocketConnect: 0x01404b9c -> 2.127.252.241:80
+07/04/15 15:06:44.570: [0x00000fa0] SOCKET: TryConnect error: 10036
+07/04/15 15:06:44.574: [0x00000fa0] SOCKET: Connect: FAILED (0: )
+07/04/15 15:06:44.584: [0x00000fa0] LOADER: AppVersion: 4 40
+07/04/15 15:06:44.587: [0x00000fa0] LOADER: S3E Version    : 4.40.0
+07/04/15 15:06:44.590: [0x00000fa0] LOADER: Arch           : X86
+07/04/15 15:06:44.593: [0x00000fa0] LOADER: VFP            : 1
+07/04/15 15:06:44.597: [0x00000fa0] LOADER: App S3E Version: 4.40.0
+07/04/15 15:06:44.601: [0x00000fa0] LOADER: App arch       : X86
+07/04/15 15:06:44.605: [0x00000fa0] LOADER: App VFP        : 0
+07/04/15 15:06:44.609: [0x00000fa0] LOADER: new s3eExecHandle = 0x01005f48
+07/04/15 15:06:44.631: [0x00000fa0] SOCKET: TryConnect error: 10056
+07/04/15 15:06:44.634: [0x00000fa0] SOCKET: NotifyConnect: 3000 0x01404b9c
+07/04/15 15:06:44.640: [0x00000fa0] FILE: s3eFileOpen('ident.free', 'r') succeeded, id=1008 p=0x013606ac
+07/04/15 15:06:44.643: [0x00000fa0] FILE: s3eFileOpen failed: ('ram://uident.free', 'r') (root = )
+07/04/15 15:06:44.650: [0x00000fa0] FILE: s3eFileOpen('ram://uident.free', 'w') succeeded, id=1010 p=0x013608e4
+07/04/15 15:06:44.653: [0x00000fa0] FILE: s3eFileClose h=0x013608e4
+07/04/15 15:06:44.657: [0x00000fa0] SOCKET: s3eSocketClose: 0x01404b9c open=1
+07/04/15 15:06:46.062: [0x00000fa0] LOADER: Screen size: 320 480
+07/04/15 15:06:46.214: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1011 p=0x01360a00
+07/04/15 15:06:46.218: [0x00000fa0] FILE: s3eFileClose h=0x01360a00
+07/04/15 15:06:46.228: [0x00000fa0] VIDEO: s3eVideoPlay raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg
+07/04/15 15:06:46.232: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1012 p=0x01360b1c
+07/04/15 15:06:46.234: [0x00000fa0] VIDEO: data in in JPG (EXIF) format
+07/04/15 15:06:46.237: [0x00000fa0] FILE: s3eFileClose h=0x01360b1c
+07/04/15 15:06:46.240: [0x00000fa0] VIDEO: s3eVideoPlay w=320 h=320
+07/04/15 15:06:46.243: [0x00000fa0] JPEG: s3eVideoPlay_jpeglib: raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg
+07/04/15 15:06:46.248: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1013 p=0x01360c38
+07/04/15 15:06:46.250: [0x00000fa0] JPEG: loading jpeg file: raw://C:\Marmalade\7.5\s3e/deploy/resources/mwm-splash-320.jpg [37220]
+07/04/15 15:06:46.278: [0x00000fa0] JPEG: jpeg head was read: [320x320]
+07/04/15 15:06:46.293: [0x00000fa0] JPEG: CanvasSink: canvas[320x320], pos[0x80], display[(0-320)x(0-320)]
+07/04/15 15:06:46.297: [0x00000fa0] JPEG: from [320x320] to [320x320]
+07/04/15 15:06:46.326: [0x00000fa0] FILE: s3eFileClose h=0x01360c38
+07/04/15 15:06:46.329: [0x00000fa0] VIDEO: s3eVideoPlay done: 0
+07/04/15 15:06:48.116: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1014 p=0x01360d54
+07/04/15 15:06:48.120: [0x00000fa0] VIDEO: s3eVideoPlay raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg
+07/04/15 15:06:48.124: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1015 p=0x01360e70
+07/04/15 15:06:48.126: [0x00000fa0] VIDEO: data in in JPG (EXIF) format
+07/04/15 15:06:48.130: [0x00000fa0] FILE: s3eFileClose h=0x01360e70
+07/04/15 15:06:48.216: [0x00000fa0] VIDEO: s3eVideoPlay w=320 h=320
+07/04/15 15:06:48.223: [0x00000fa0] JPEG: s3eVideoPlay_jpeglib: raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg
+07/04/15 15:06:48.228: [0x00000fa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1016 p=0x01360f8c
+07/04/15 15:06:48.231: [0x00000fa0] JPEG: loading jpeg file: raw://C:\Marmalade\7.5\s3e/deploy/resources/ads/ad.320.jpg [30325]
+07/04/15 15:06:48.235: [0x00000fa0] JPEG: jpeg head was read: [320x320]
+07/04/15 15:06:48.254: [0x00000fa0] JPEG: CanvasSink: canvas[320x320], pos[0x80], display[(0-320)x(0-320)]
+07/04/15 15:06:48.258: [0x00000fa0] JPEG: from [320x320] to [320x320]
+07/04/15 15:06:48.309: [0x00000fa0] FILE: s3eFileClose h=0x01360f8c
+07/04/15 15:06:48.313: [0x00000fa0] VIDEO: s3eVideoPlay done: 0
+07/04/15 15:06:52.043: [0x00000fa0] DEVICE: s3eOSExecExecute [0] 'http://www.signaltothestars.com'
+07/04/15 15:06:52.537: [0x00000fa0] DEVICE: s3eOSExecExecute -> 0
+07/04/15 15:06:53.548: [0x00000fa0] DEVICE: s3eOSExecExecute [0] 'http://www.signaltothestars.com'
+07/04/15 15:06:53.586: [0x00000fa0] DEVICE: s3eOSExecExecute -> 0
+07/04/15 15:06:53.889: [0x0000179c] WINDOW: Enqueuing S3E_WINDOW_LOST_FOCUS
+07/04/15 15:06:54.075: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+07/04/15 15:06:54.078: [0x00000fa0] SURFACE: s3eSurfaceSetup: matches native type
+07/04/15 15:06:54.082: [0x00000fa0] SURFACE: s3eSurfaceSetup: no user surface needed
+07/04/15 15:06:54.086: [0x00000fa0] LOADER: Calling s3eDeviceInit(S3E_DEVICE_INIT_MEMORY)
+07/04/15 15:06:54.088: [0x00000fa0] DEVICE: DeviceInit: services=0x00020000 [0x00020000]
+07/04/15 15:06:54.093: [0x00000fa0] DEVICE: Initialising MEMORY
+07/04/15 15:06:54.098: [0x00000fa0] MEMORY: Loader heap size=30000
+07/04/15 15:06:54.102: [0x00000fa0] MEMORY: using default size (3145728) for heap0 (set MemSize in your game.icf to override this)
+07/04/15 15:06:54.112: [0x00000fa0] MEMORY: Initialised heap 0 [0x03361c64-0x03661c64] size=3145728
+07/04/15 15:06:54.117: [0x00000fa0] MEMORY: Initialised heap 7 [0x03671464-0x0367dc64] size=51200
+07/04/15 15:06:54.123: [0x00000fa0] MEMORY: s3eMemorySetUserMemMgr 0x00fe4000 0x00fe4240 0x00fe3d18
+07/04/15 15:06:54.127: [0x00000fa0] DEVICE: DeviceInit done: services=0x00020000
+07/04/15 15:06:54.132: [0x00000fa0] LOADER: IwS3EGetEntryPoint -> 0x5290ee7d
+07/04/15 15:06:54.137: [0x00000fa0] LOADER: Executing S3E 0x01005f48 [c:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\Blaster\build_blaster_vc11\Debug_Blaster_VC11_x86\Blaster.s86] entry=0x5290ee7d
+07/04/15 15:06:54.148: [0x00000fa0] EXT: s3eExtGetHash: 0xcc0b4a28 [0x529bcca0 size=80]
+07/04/15 15:07:14.580: [0x0000179c] WINDOW: Enqueuing S3E_WINDOW_GAINED_FOCUS
+07/04/15 15:07:15.152: [0x0000179c] WINDOW: Enqueuing S3E_WINDOW_LOST_FOCUS
+07/04/15 15:07:17.634: [0x00000fa0] EXT: initializing extension: s3eThread
+07/04/15 15:07:17.637: [0x00000fa0] EXT: initializing extension: s3eThread 0x012787d0
+07/04/15 15:07:17.641: [0x00000fa0] MEMORY: s3eMemorySetUserMemMgr 0x5290e031 0x5290e072 0x5290db45
+07/04/15 15:07:17.646: [0x00000fa0] THREAD: *** Warning: The application is not calling s3eDeviceYield often enough. This can cause problems during suspend and resume. Time since last yield: 23499 ms

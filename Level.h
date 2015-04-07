@@ -2,9 +2,9 @@
 #define LEVEL_H
 
 /*makes it so the game can be bigger or smaller*/
-#define TILE_SIZE 16
-#define LEVEL_WIDTH 20
-#define LEVEL_HEIGHT 15
+#define TILE_SIZE 640
+#define LEVEL_WIDTH 640
+#define LEVEL_HEIGHT 640
 
 #include <SDL.h>
 #include <SDL_image.h>

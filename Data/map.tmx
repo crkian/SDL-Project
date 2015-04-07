@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="../../../../../../Desktop/spritelib_gpl/platform/blocks1.png" width="640" height="400"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzNmFtuxDAIRdnLrGGkKluY2f962n5UspC5D3BHQbISv+BcID+JuLddP+Nxw3ElzicZE2O+UZz34iM270oMl4Hd+bXXJn4nTqXfzX/Fl/OHYiF/jMfVqPBN6+T6WJ8qn8Je3UPGOBEf4jw5ss8unzs/zafUqpo7bEHuRjqn8iHe2DxX+0T+lF5EPOr6lC+EM6y2qv/d9+FodXp1t8a0MD4Wh+nocnX4Kma1B7J1+SK9q3xTLf+ZP0WTousEH/OpfjtIb/f7UHo8NvezTfkYRxUjn2c6pnxqbzO+AHuoDxQ+JweIz+3tzOdoc/t0fXb5mMaTdT/NV3FW+2iunkV83fqt65W/ak/lQ5zKfud8N38n+Ha5m/K5+WB9VLG4fJVPha/iYjbNX8Wz04N0OXlT+m8Xk/F06jnlY/mq1iLto1qf4PvUUPmqfkPmciAfiM+NdaoHM3v+f3oX+0rza1l3R77H5o7fP65v0yTgvw==
+  </data>
+ </layer>
+</map>
