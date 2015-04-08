@@ -26,6 +26,8 @@ private:
 
 	unsigned int score;
 
+		float blinking;	
+
 public:
 	bool Init(Game* game); //Not virtual, do not derive from this class, will need to define function bodies
 	void HandleEvents(SDL_Event* event);

@@ -51,6 +51,7 @@ bool State_Gameplay::Init(Game* game)
 	}
 
 	score= 0;
+	blinking = 0.0f;
 
 	return true;
 
@@ -66,6 +67,9 @@ void State_Gameplay::HandleEvents(SDL_Event* event)
 }
 void State_Gameplay::Update(float deltaTime)
 {
+
+
+
 	/* keyboard input*/
 
 	const Uint8* keyboard = SDL_GetKeyboardState(NULL);
@@ -81,44 +85,46 @@ void State_Gameplay::Update(float deltaTime)
 	if(keyboard[SDL_SCANCODE_DOWN])
 		dawn.Move(0,1);
 
+			if(keyboard[SDL_SCANCODE_SPACE])
+		{
+			game->PushState(new State_Gameplay());
+		}
 
 	/*this causes no delay to the framerate*/
 	dawn.Update(deltaTime);
 
-	if (score <=10)
+
+
+	for(int i=0; i<coins.size(); i++)
 	{
-
-		for(int i=0; i<coins.size(); i++)
+		coins[i]->Update(deltaTime);
+		if(coins[i]->collidesWith(&dawn))
 		{
-			coins[i]->Update(deltaTime);
-			if(coins[i]->collidesWith(&dawn))
-			{
-				coins[i]->Relocate();
-				score++;
-			}
+			coins[i]->Relocate();
+			score++;
 		}
+	}
 
-		for(int i=0; i<walls.size(); i++)
+	for(int i=0; i<walls.size(); i++)
+	{
+		walls[i]->Update(deltaTime);
+		if(walls[i]->collidesWith(&dawn))
 		{
-			walls[i]->Update(deltaTime);
-			if(walls[i]->collidesWith(&dawn))
-			{
-				walls[i]->Relocate();
-				score=score+2;
-			}
+			walls[i]->Relocate();
+			score=score+2;
 		}
-
-if (score >10)
-{
-	std::string text = "Game Over";
-	float x = text.length() * 8 / 2;
-	SDL_Quit();
-}
-
 	}
 
 
+
+	blinking += 2 * deltaTime;
+	if(blinking >= 2.0f)
+		blinking = 0.0f;
+
 }
+
+
+
 void State_Gameplay::Render()
 {
 
@@ -137,7 +143,19 @@ void State_Gameplay::Render()
 	dawn.Render();
 
 	char buffer[64];
-	font->RenderString(0, 0, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));
+	font->RenderString(10, 10, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));
+
+	if(score >10)
+	{
+
+		std::string text = "PRESS SPACEBAR TO START";
+		float x = text.length() * 8 / 2;	
+
+		if((int)blinking > 0)
+			font->RenderString(320 - x, 350, text);
+
+
+	}	
 
 }
 void State_Gameplay::Quit()
