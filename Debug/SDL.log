@@ -1,4 +1,4 @@
-﻿Build started 09/04/2015 00:48:08.
+﻿Build started 09/04/2015 01:53:41.
      1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Coin.cpp Dawn.cpp Font.cpp Game.cpp GameManagement.cpp Level.cpp main.cpp Object.cpp Random.cpp ResourceManager.cpp State_Gameplay.cpp State_Menu.cpp Wall.cpp
@@ -76,4 +76,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:27.13
+Time Elapsed 00:00:31.90

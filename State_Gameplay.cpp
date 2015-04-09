@@ -143,12 +143,12 @@ void State_Gameplay::Render()
 	dawn.Render();
 
 	char buffer[64];
-	font->RenderString(10, 10, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));
+	font->RenderString(20, 20, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));
 
 	if(score >10)
 	{
 
-		std::string text = "PRESS SPACEBAR TO START";
+		std::string text = "PRESS SPACEBAR TO RESTART";
 		float x = text.length() * 8 / 2;	
 
 		if((int)blinking > 0)
