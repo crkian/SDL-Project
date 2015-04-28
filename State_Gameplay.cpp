@@ -36,7 +36,7 @@ bool State_Gameplay::Init(Game* game)
 
 	/*called after the textures*/
 
-	dawn.Init(game, rm);
+	robby.Init(game, rm);
 
 	for(int i=0; i < 30; i++)
 	{
@@ -77,13 +77,13 @@ void State_Gameplay::Update(float deltaTime)
 	/* no if else so we can move in a diagonal*/
 
 	if(keyboard[SDL_SCANCODE_RIGHT])
-		dawn.Move(1,0);
+		robby.Move(1,0);
 	if(keyboard[SDL_SCANCODE_LEFT])
-		dawn.Move(-1,0);
+		robby.Move(-1,0);
 	if(keyboard[SDL_SCANCODE_UP])
-		dawn.Move(0,-1);
+		robby.Move(0,-1);
 	if(keyboard[SDL_SCANCODE_DOWN])
-		dawn.Move(0,1);
+		robby.Move(0,1);
 
 			if(keyboard[SDL_SCANCODE_SPACE])
 		{
@@ -91,14 +91,14 @@ void State_Gameplay::Update(float deltaTime)
 		}
 
 	/*this causes no delay to the framerate*/
-	dawn.Update(deltaTime);
+	robby.Update(deltaTime);
 
 
 
 	for(int i=0; i<coins.size(); i++)
 	{
 		coins[i]->Update(deltaTime);
-		if(coins[i]->collidesWith(&dawn))
+		if(coins[i]->collidesWith(&robby))
 		{
 			coins[i]->Relocate();
 			score++;
@@ -108,7 +108,7 @@ void State_Gameplay::Update(float deltaTime)
 	for(int i=0; i<walls.size(); i++)
 	{
 		walls[i]->Update(deltaTime);
-		if(walls[i]->collidesWith(&dawn))
+		if(walls[i]->collidesWith(&robby))
 		{
 			walls[i]->Relocate();
 			score=score+2;
@@ -140,7 +140,7 @@ void State_Gameplay::Render()
 		walls[i]->Render();
 	}
 
-	dawn.Render();
+	robby.Render();
 
 	char buffer[64];
 	font->RenderString(20, 20, "SCORE: " + std::string(SDL_itoa(score, buffer, 10)));

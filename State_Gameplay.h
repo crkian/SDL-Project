@@ -3,7 +3,7 @@
 
 #include "GameState.h" // include GameState header file
 #include "ResourceManager.h"
-#include "Dawn.h"
+#include "Robby.h"
 #include "Level.h"
 #include "Coin.h"
 #include "Font.h"
@@ -16,7 +16,7 @@ private:
 
 	ResourceManager* rm;
 
-	Dawn dawn; //has been added to the game
+	Robby robby; //has been added to the game
 	Level* level;
 
 

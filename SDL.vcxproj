@@ -80,7 +80,7 @@
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Coin.h" />
-    <ClInclude Include="dawn.h" />
+    <ClInclude Include="robby.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Object.h" />
@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Coin.cpp" />
-    <ClCompile Include="Dawn.cpp" />
+    <ClCompile Include="robby.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameManagement.cpp" />

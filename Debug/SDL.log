@@ -1,22 +1,7 @@
-﻿Build started 09/04/2015 01:53:41.
-     1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 28/04/2015 12:28:13.
+     1>Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Coin.cpp Dawn.cpp Font.cpp Game.cpp GameManagement.cpp Level.cpp main.cpp Object.cpp Random.cpp ResourceManager.cpp State_Gameplay.cpp State_Menu.cpp Wall.cpp
-         Wall.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(19): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(20): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(22): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(23): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(24): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(25): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\wall.cpp(35): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-         State_Menu.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(47): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(53): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(58): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(62): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(67): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt robby.cpp State_Gameplay.cpp State_Menu.cpp
          State_Gameplay.cpp
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(98): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(108): warning C4018: '<' : signed/unsigned mismatch
@@ -25,40 +10,27 @@
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(152): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(166): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_gameplay.cpp(172): warning C4018: '<' : signed/unsigned mismatch
-         ResourceManager.cpp
-         Random.cpp
-         Object.cpp
-         main.cpp
-         Level.cpp
-         GameManagement.cpp
-         Game.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\game.cpp(43): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-         Font.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\font.cpp(26): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\font.cpp(27): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\font.cpp(36): warning C4018: '<' : signed/unsigned mismatch
-         Dawn.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(62): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(63): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(64): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(65): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(69): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(70): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(71): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\dawn.cpp(72): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         Coin.cpp
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(19): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(20): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(22): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(23): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(24): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(25): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(33): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\coin.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         robby.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(62): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(63): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(64): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(65): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(69): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(70): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(71): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\robby.cpp(72): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         State_Menu.cpp
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(47): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(53): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(58): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(62): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\blogs_000\documents\visual studio 2012\projects\sdl\sdl\state_menu.cpp(67): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Debug\SDL.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Debug\SDL.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Debug\SDL.lib" /MACHINE:X86 Debug\Coin.obj
-         Debug\Dawn.obj
+         Debug\robby.obj
          Debug\Font.obj
          Debug\Game.obj
          Debug\GameManagement.obj
@@ -72,8 +44,8 @@
          Debug\Wall.obj
      1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
          SDL.vcxproj -> C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\Debug\SDL.exe
-     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\blogs_000\Documents\Visual Studio 2012\Projects\SDL\SDL\SDL.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:31.90
+Time Elapsed 00:00:06.76
